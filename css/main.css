@@ -1,0 +1,126 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('https://fonts.googleapis.com/css2?family=Roboto');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/big-office-with-wooden-table.jpg');
+    background-size: contain 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.78);
+    width: 100%;
+    margin: 10px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 5px 4px rgba(0, 0, 0, 0.25);
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: darkgray;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    outline: 3px dashed rgba(0, 0, 0, 0.105);
+    outline-offset: 10px;
+}
+
+.contact-item {
+    width: 100%;
+    display: flex;
+    padding: 15px;
+    font-size: 22px;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.105);
+}
+
+.contact-item:last-child {
+    border-bottom: none;
+}
+
+.contact-item .desc {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.desc-text {
+    color: rgb(93, 93, 93) !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+.job-desc {
+    text-align: center;
+}
+
+.main-logo {
+    color: rgb(181, 119, 57) !important;
+    display: flex;
+    flex-direction: column;
+    font-size: 48px;
+    align-items: center;
+    justify-content: center;
+    font-style: italic;
+}
+
+.main-logo h1 {
+    font-size: 48px;
+}
+
+.main-logo .sub {
+    font-size: 18px;
+    text-align: center;
+}
+
+.start-list {
+    margin-top: 10px;
+}
+
+.name {
+    margin-top: 10px;
+}
+
+.separator {
+    color: transparent;
+    background: black;
+    height: 3px;
+    width: 100%;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+a {
+    color: black
+}
+
+@media (min-width: 768px) {
+    .content {
+        width: fit-content;
+    }
+}
